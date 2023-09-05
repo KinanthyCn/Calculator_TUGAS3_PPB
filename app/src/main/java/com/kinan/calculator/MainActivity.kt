@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
 
-                "X" -> {
+                "x" -> {
                     operation  = {a, b -> (a * b).toDouble()}
                     current.text = current.text.toString() + view.text.toString()
                 }
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 "=" -> {
-                    val temp = result.text.split("+", "X", "-", "/", "^")
+                    val temp = result.text.split("+", "x", "-", "/", "^")
                     number1 = temp[0].toDouble()
                     number2 = temp[1].toDouble()
                     val equals = operation(number1, number2)
